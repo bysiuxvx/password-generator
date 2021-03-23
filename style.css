@@ -4,24 +4,46 @@
     box-sizing: border-box;
 }
 
+:root {
+    --colorOutput: rgb(50, 45, 56);
+    --colorAlt: rgb(78, 71, 87);
+    --colorMain: rgb(50, 55, 75);
+    --colorAlt2: rgb(89, 86, 92);
+    --colorFont: rgb(255, 154, 1);
+    --colorBtn: rgb(70, 75, 95);
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: beige;
+    color: var(--colorFont);
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(119deg, rgba(2, 0, 36, 1) 0%, rgba(255, 154, 1, 1) 0%, rgba(50, 55, 75, 1) 75%, rgba(0, 0, 0, 1) 100%);
 }
 
 .container {
     height: 450px;
     width: 350px;
-    background-color: green;
+    background-color: var(--colorMain);
     padding: 10px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 3px white;
+    animation: shadow 2s linear infinite;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .result-container {
     display: flex;
     position: relative;
-    background-color: yellow;
+    background-color: var(--colorOutput);
     height: 50px;
     width: calc(100% - 10px);
     justify-content: flex-start;
@@ -33,21 +55,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     width: 100%;
 }
 
-.result-container .btn {
-    position: absolute;
-    right: 5px;
-    font-size: 18px;
-    height: 35px;
-    width: 35px;
-    cursor: pointer;
-    color: white;
-    background-color: darkviolet;
-    border: 2.5px solid white;
-    box-shadow: 0 0 0 2.5px darkviolet;
+#length {
+    outline: none;
+}
+
+.settings {
+    font-size: 20px;
 }
 
 .setting {
@@ -56,4 +72,51 @@ body {
     align-items: center;
     margin: 15px 0;
     width: calc(100% - 10px);
+}
+
+.result-container .btn {
+    position: absolute;
+    right: 8px;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+.container .largeBtn {
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    right: 30%;
+    left: 30%;
+    color: white;
+}
+
+.btn,
+.largeBtn {
+    outline: none;
+    transition: .4s;
+    box-shadow: 0 0 0 3.5px var(--colorBtn);
+    background-color: var(--colorBtn);
+    border: 2.5px solid white;
+}
+
+.largeBtn:hover,
+.btn:hover {
+    background-color: var(--colorFont);
+    box-shadow: 0 0 0 3.5px var(--colorFont);
+
+}
+
+@keyframes shadow {
+    0% {}
+
+    50% {
+        box-shadow: 0 0 35px white;
+    }
+
+    100% {
+        box-shadow: 0 0 3px white;
+    }
 }
