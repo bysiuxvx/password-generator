@@ -2,5 +2,5 @@
 
 Password generator
 
-The idea to create this project came from a website dedicated to beginners in the frontend environment.
-
+I created this password generator as part of the #100days100projects challenge, inspired by Florin Pop 
+https://www.florin-pop.com/
