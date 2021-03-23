@@ -6,9 +6,7 @@
 
 :root {
     --colorOutput: rgb(50, 45, 56);
-    --colorAlt: rgb(78, 71, 87);
     --colorMain: rgb(50, 55, 75);
-    --colorAlt2: rgb(89, 86, 92);
     --colorFont: rgb(255, 154, 1);
     --colorBtn: rgb(70, 75, 95);
 }
@@ -77,17 +75,14 @@ h2 {
 }
 
 .result-container .btn {
-    position: absolute;
     right: 8px;
     font-size: 18px;
     height: 35px;
     width: 35px;
-    cursor: pointer;
     color: white;
 }
 
 .container .largeBtn {
-    position: absolute;
     height: 60px;
     width: 150px;
     right: 30%;
@@ -97,7 +92,9 @@ h2 {
 
 .btn,
 .largeBtn {
+    position: absolute;
     outline: none;
+    cursor: pointer;
     transition: .4s;
     box-shadow: 0 0 0 3.5px var(--colorBtn);
     background-color: var(--colorBtn);
