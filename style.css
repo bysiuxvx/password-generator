@@ -1,121 +1,146 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --colorOutput: rgb(50, 45, 56);
-    --colorMain: rgb(50, 55, 75);
-    --colorFont: rgb(255, 154, 1);
-    --colorBtn: rgb(70, 75, 95);
+  --colorOutput: rgb(50, 45, 56);
+  --colorMain: rgb(50, 55, 75);
+  --colorFont: rgb(255, 154, 1);
+  --colorBtn: rgb(70, 75, 95);
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: beige;
-    color: var(--colorFont);
-    font-family: 'Dosis', sans-serif;
-    background: linear-gradient(119deg, rgba(2, 0, 36, 1) 0%, rgba(255, 154, 1, 1) 0%, rgba(50, 55, 75, 1) 75%, rgba(0, 0, 0, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: beige;
+  color: var(--colorFont);
+  font-family: 'Dosis', sans-serif;
+  background: linear-gradient(
+    119deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 154, 1, 1) 0%,
+    rgba(50, 55, 75, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .container {
-    height: 450px;
-    width: 350px;
-    background-color: var(--colorMain);
-    padding: 10px;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0 0 3px white;
-    animation: shadow 2s linear infinite;
+  height: 450px;
+  width: 350px;
+  background-color: var(--colorMain);
+  padding: 10px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 3px white;
+  animation: shadow 2s linear infinite;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .result-container {
-    display: flex;
-    position: relative;
-    background-color: var(--colorOutput);
-    height: 50px;
-    width: calc(100% - 10px);
-    justify-content: flex-start;
-    align-items: center;
-    margin: 30px auto;
-    color: white;
-    font-size: 26px;
+  display: flex;
+  position: relative;
+  background-color: var(--colorOutput);
+  height: 50px;
+  width: calc(100% - 10px);
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px auto;
+  color: white;
+  font-size: 26px;
 }
 
 .result-container .output {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #length {
-    outline: none;
+  outline: none;
 }
 
 .settings {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .setting {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
-    width: calc(100% - 10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  width: calc(100% - 10px);
 }
 
 .result-container .btn {
-    right: 8px;
-    font-size: 18px;
-    height: 35px;
-    width: 35px;
-    color: white;
+  right: 8px;
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
+  color: white;
 }
 
 .container .largeBtn {
-    height: 60px;
-    width: 150px;
-    right: 30%;
-    left: 30%;
-    color: white;
+  height: 60px;
+  width: 150px;
+  right: 30%;
+  left: 30%;
+  color: white;
+}
+
+#github {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+  background-color: var(--colorMain);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  transition: 0.4s;
+}
+
+#github:hover {
+  color: var(--colorFont);
 }
 
 .btn,
 .largeBtn {
-    position: absolute;
-    outline: none;
-    cursor: pointer;
-    transition: .4s;
-    box-shadow: 0 0 0 3.5px var(--colorBtn);
-    background-color: var(--colorBtn);
-    border: 2.5px solid white;
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 0 3.5px var(--colorBtn);
+  background-color: var(--colorBtn);
+  border: 2.5px solid white;
 }
 
 .largeBtn:hover,
 .btn:hover {
-    background-color: var(--colorFont);
-    box-shadow: 0 0 0 3.5px var(--colorFont);
-
+  background-color: var(--colorFont);
+  box-shadow: 0 0 0 3.5px var(--colorFont);
 }
 
 @keyframes shadow {
-    0% {}
+  0% {
+  }
 
-    50% {
-        box-shadow: 0 0 35px white;
-    }
+  50% {
+    box-shadow: 0 0 35px white;
+  }
 
-    100% {
-        box-shadow: 0 0 3px white;
-    }
+  100% {
+    box-shadow: 0 0 3px white;
+  }
 }
