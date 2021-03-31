@@ -15,8 +15,10 @@
         var letters: [ABCDEFGH]
         var numbers: [12489372489023]
 
-    And this is how I coded this app in the beginning too, but I found out a better and more efficient way by using the String method for letteors, or +String for numbers.
-    I still had to keep the symbols in a variable, because to my knowledge there was no other way to generate those.
+    And this is how I coded this app in the beginning too, but I found out a better
+     and more efficient way by using the String method for letteors, or +String for numbers.
+    I still had to keep the symbols in a variable, because to my knowledge there was
+    no other way to generate those.
 
 #Live demo
 
