@@ -22,4 +22,4 @@
 
 #Live demo
 
-    [Live demo of the app](https://bysiuxvx.github.io/password-generator/)
+[Live demo of the app](https://bysiuxvx.github.io/password-generator/)
