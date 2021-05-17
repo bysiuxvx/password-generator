@@ -2,6 +2,10 @@
 
     I created this password generator as part of the #100days100projects challenge
 
+#Live demo
+
+[Live demo of the app](https://bysiuxvx.github.io/password-generator/)
+
 #Technologies used
 
     HTML
@@ -16,10 +20,6 @@
         var numbers: [12489372489023]
 
     And this is how I coded this app in the beginning too, but I found out a better
-     and more efficient way by using the String method for letteors, or +String for numbers.
+     and more efficient way by using the String method for letters, or +String for numbers.
     I still had to keep the symbols in a variable, because to my knowledge there was
     no other way to generate those.
-
-#Live demo
-
-[Live demo of the app](https://bysiuxvx.github.io/password-generator/)
