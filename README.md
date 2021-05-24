@@ -6,7 +6,7 @@ I created this password generator as part of the #100days100projects challenge
 
 [Live demo of the app](https://bysiuxvx.github.io/password-generator/)
 
-# Technologies used
+## Technologies used
 
 - HTML
 - CSS
